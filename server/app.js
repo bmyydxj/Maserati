@@ -16,7 +16,7 @@ app.all("*", (req, res, next) => {
         next();
 });
 // 4. 监听 http://127.0.0.1:8081"
-app.listen(8081, "0.0.0.0");
+app.listen(8080, "0.0.0.0");
 
 // 5. 处理中间件
 const bodyParser = require("body-parser");
@@ -26,17 +26,22 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 // 6. 处理路由
-const userRouter  = require("./routes/user");
-const otherRouter = require("./routes/other");
-app.use("/user", userRouter);
-app.use("/other", otherRouter);
-app.get("/", (req, res) => {
-    res.send("Hello, 木子李！")
-})
+// const userRouter  = require("./routes/user");
+// const otherRouter = require("./routes/other");
+// app.use("/user", userRouter);
+// app.use("/other", otherRouter);
+const banking = require("./mysqlConnection");
+app.get("/banking", (req, res) => {
+    const db = banking();
+    db.connect();
+    db.query("SELECT * FROM banking", (err, sqlRes) => {
+        res.send(JSON.stringify(sqlRes));
+    })
+});
 
 // 7. 处理静态资源
 app.use(express.static("public"));
 
 // 8. 打印输出提示信息
-console.log("server running at http://0.0.0.0:8081");
+console.log("server running at http://0.0.0.0:8080");
 

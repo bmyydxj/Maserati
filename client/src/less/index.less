@@ -1,0 +1,166 @@
+@import "./normalized.less";
+@import "./head.less";
+@import "../../node_modules/swiper/css/swiper.min.css";
+
+main {
+    // width: 100%;
+
+    .swip-slidse {
+        img {
+            width: 100%;
+            height: 900px;
+        }
+    }
+
+    .widet {
+        width: 100%;
+
+        .wrapper {
+            // width: 100%;
+            display: grid;
+            grid-template-columns: ~"154px 10px 154px 10px 154px 10px 154px";
+            grid-template-rows: ~"120px auto 665px";
+
+            .box {
+                background: #fff;
+                color: #000;
+                font-size: 150%;
+                padding: 20px;
+                text-align: center;
+
+                div {
+                    padding-top: 30px;
+                }
+
+                div:nth-child(1) {
+                    // padding-top: 0;
+                    font-size: 50.4px;
+                }
+
+                div:nth-child(2),
+                div:nth-child(3) {
+                    font-size: 15.6px;
+                }
+
+                div:nth-child(5) {
+                    font-size: 14.4px;
+                }
+
+                div:nth-child(7) {
+                    font-size: 16.8px;
+                    width: 150px;
+                    height: 50px;
+                    border: 1px solid #000;
+                    padding-top: 0;
+                    margin-top: 30px;
+                    line-height: 50px;
+                    position: relative;
+                    left: 38%;
+                    border-radius: 5px;
+                }
+
+                div:nth-child(8) {
+                    font-size: 16.8px;
+                    width: 150px;
+                    height: 50px;
+                    background: #0c2340;
+                    color: #fff;
+                    border: 1px solid #000;
+                    padding-top: 0;
+                    line-height: 50px;
+                    position: relative;
+                    left: 38%;
+                    top: 10px;
+                    border-radius: 5px;
+                }
+
+                div:nth-child(6) {
+                    font-size: 24px;
+                    padding-top: 0;
+                }
+
+                img {
+                    width: 360px;
+                    height: 180px;
+                    padding-top: 30px;
+                }
+            }
+
+            .a {
+                grid-column: ~"1 / 10";
+                grid-row: ~"1 / 2";
+                background: rgb(242, 241, 240);
+                line-height: 80px;
+                text-align: left;
+
+                div {
+                    display: inline-block;
+                    font-size: 50px;
+                    position: relative;
+                    left: 2%;
+                }
+
+                p {
+                    display: inline-block;
+                    position: relative;
+                    left: 6%;
+                }
+            }
+
+            .b {
+                grid-column: ~"1 / 8";
+                grid-row: ~"3 / 4";
+            }
+
+            .b:after {
+                background: linear-gradient(transparent, #ebebeb, transparent);
+            }
+
+            .c {
+                grid-column: ~"8 / 9";
+                grid-row: ~"3 / 4";
+            }
+
+            .d {
+                grid-column: ~"9 / 9";
+                grid-row: ~"3 / 4";
+            }
+        }
+    }
+
+    .world {
+        background: #fff;
+        width: 98%;
+        height: 700px;;
+        .sow {
+            width: 98%;
+            font-size: 50.4px;
+            position: relative;
+            left: 2%;
+        }
+        #swiper-container2{
+            padding-top: 40px;
+            width: 80%;
+            height: 500px;
+            .swiper-slide{
+                width: 450px;
+                width: auto;
+                img{
+                    width: 100%;
+                    height: 480px;
+                }
+                div{
+                    font-size: 36px;
+                    color: #fff;
+                    position: relative;
+                    bottom: 80px;
+                    left: 20px;
+                }
+                
+            }
+            .swiper-pagination{
+                top: 520px;
+            }
+        }
+    }
+}
