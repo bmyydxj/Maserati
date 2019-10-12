@@ -9,11 +9,16 @@ body {
         height: 90px;
         background: #fff;
 
-        img {
+        .img {
             width: 104px;
             display: inline-block;
             position: absolute;
             left: 5%;
+            z-index: 100;
+
+            img {
+                width: 100%;
+            }
         }
 
         .seles {
@@ -58,7 +63,7 @@ body {
                             height: 90px;
 
                             a {
-                                font-size: 14px;
+                                font-size: 16.8px;
                                 color: #000;
                             }
 
@@ -138,33 +143,167 @@ body {
                             position: absolute;
                             left: 17%;
                             bottom: 10%;
+
+                            a {
+                                font-size: 24px;
+                            }
+
+                            .sect_two {
+                                a {
+                                    font-size: 16.8px;
+                                    color: #000;
+                                }
+
+                                p {
+                                    font-size: 16.8px;
+                                }
+                            }
                         }
 
                         .li_2 {
                             position: absolute;
                             top: 0;
                             left: 32%;
+
+                            a {
+                                font-size: 24px;
+                            }
+
+                            .sect_two {
+                                a {
+                                    font-size: 16.8px;
+                                    color: #000;
+                                }
+
+                                p {
+                                    font-size: 16.8px;
+                                }
+                            }
                         }
 
                         .li_3 {
                             position: absolute;
                             left: 47%;
                             top: 0;
+
+                            a {
+                                font-size: 24px;
+                            }
+
+                            .sect_two {
+                                a {
+                                    font-size: 16.8px;
+                                    color: #000;
+                                }
+
+                                p {
+                                    font-size: 16.8px;
+                                }
+                            }
                         }
 
                         .li_4 {
                             position: absolute;
                             left: 62%;
                             top: 0;
+
+                            a {
+                                font-size: 24px;
+                            }
+
+                            .sect_two {
+                                a {
+                                    font-size: 16.8px;
+                                    color: #000;
+                                }
+
+                                p {
+                                    font-size: 16.8px;
+                                }
+                            }
                         }
 
                         .li_5 {
                             position: absolute;
                             left: 77%;
                             top: 0;
+
+                            a {
+                                font-size: 24px;
+                            }
+
+                            .sect_two {
+                                a {
+                                    font-size: 16.8px;
+                                    color: #000;
+                                }
+
+                                p {
+                                    font-size: 16.8px;
+                                }
+                            }
                         }
+
                         .sect_two :hover {
                             border-bottom: 2px solid blue;
+                        }
+                    }
+
+                    .stk {
+                        width: 100%;
+
+                        li {
+                            width: 30%;
+                            height: 300px;
+                            text-align: center;
+
+                            .tex {
+                                padding: 0;
+
+                                div {
+                                    height: 30px;
+                                    line-height: 30px;
+                                }
+
+                                div:nth-child(1) {
+                                    font-size: 24px;
+                                }
+
+                                div:nth-child(3) {
+                                    font-size: 14.4px;
+                                }
+
+                                div:nth-child(4) {
+                                    font-size: 19.2px;
+                                }
+
+                                div:nth-child(3),
+                                div:nth-child(4) {
+                                    font-weight: 100;
+                                }
+
+                                div:nth-child(5),
+                                div:nth-child(6) {
+                                    width: 60%;
+                                    height: 30px;
+                                    position: relative;
+                                    left: 20%;
+                                    border: 1px solid #000;
+                                    margin-top: 10px;
+                                    border-radius: 5px;
+                                }
+
+                                div:nth-child(6) {
+                                    background: #0c2340;
+                                    color: #fff;
+                                }
+
+                                img {
+                                    position: relative;
+                                    width: 216px;
+                                    left: 5px;
+                                }
+                            }
                         }
                     }
 
@@ -196,7 +335,9 @@ body {
         }
 
 
-        .login {
+        .login,
+        .logout {
+           
             display: inline-block;
             position: absolute;
             right: 0;
@@ -208,16 +349,26 @@ body {
                 line-height: 90px;
                 text-align: center;
                 // background: #f2f1f0;
+                cursor: pointer;
             }
 
             .dl {
                 background: #f2f1f0;
                 color: #333 !important;
+                cursor: pointer;
+                a {
+                    color: #000;
+                }
             }
 
             .zc {
                 background: #0c2340;
                 color: white !important;
+                cursor: pointer;
+
+                a {
+                    color: #fff;
+                }
             }
 
             i {
@@ -226,6 +377,25 @@ body {
                 display: inline-block;
                 line-height: 90px;
                 text-align: center;
+            }
+        }
+
+        .login {
+            display: none;
+
+
+        }
+
+        .logout {
+            div,
+            i {
+                position: relative;
+                // bottom: 40px;
+            }
+            .zx{
+                background: #000;
+                color: #fff;
+                cursor: pointer;
             }
         }
     }
@@ -264,6 +434,10 @@ body {
                 left: 46.5%;
                 background-color: #0c2340;
                 border: 1px solid #0c2340;
+
+                a {
+                    color: #fff;
+                }
             }
         }
 

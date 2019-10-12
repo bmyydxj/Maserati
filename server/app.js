@@ -26,10 +26,20 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 // 6. 处理路由
-// const userRouter  = require("./routes/user");
-// const otherRouter = require("./routes/other");
-// app.use("/user", userRouter);
-// app.use("/other", otherRouter);
+
+const userRouter = require("./routes/user")
+app.use("/user", userRouter);
+
+
+const register = require("./mysqlConnection");
+app.get("/register", (req,res) => {
+    const db =register();
+    db.connect();
+    db.query("SELECT * FROM register", (err, sqlRes) => {
+        res.send(JSON.stringify(sqlRes));
+    })
+})
+
 const banking = require("./mysqlConnection");
 app.get("/banking", (req, res) => {
     const db = banking();
@@ -38,6 +48,31 @@ app.get("/banking", (req, res) => {
         res.send(JSON.stringify(sqlRes));
     })
 });
+
+const type = require("./mysqlConnection");
+app.get("/type", (req, res) => {
+    const db = type();
+    db.connect();
+    db.query("SELECT * FROM type", (err, sqlRes) => {
+        res.send(JSON.stringify(sqlRes));
+    })
+});
+
+const news = require("./mysqlConnection");
+app.get("/news", (req, res) => {
+    const db = news();
+    db.connect();
+    db.query("SELECT * FROM news", (err, sqlRes) => {
+        res.send(JSON.stringify(sqlRes));
+    })
+});
+
+
+
+
+
+
+
 
 // 7. 处理静态资源
 app.use(express.static("public"));

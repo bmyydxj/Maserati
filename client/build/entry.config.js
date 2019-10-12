@@ -4,7 +4,12 @@ module.exports = {
     "fleet"  : "./src/js/fleet-maintenance-program.js",
     "ghibli" : "./src/js/ghibli_car.js",
     "service": "./src/js/service.js",
-    "service_detail": "./src/js/service_detail.js",
     "news"   : "./src/js/news.js",
+    "enroll" : "./src/js/enroll.js",
+    "brand"  : "./src/js/brand.js",
+    "testdrive"     : "./src/js/testdrive.js",
+    "service_detail": "./src/js/service_detail.js",
     "news_detail"   : "./src/js/news_detail.js",
+    "register"      : "./src/js/register.js",
+    "grzx"   : "./src/js/grzx.js",
 }

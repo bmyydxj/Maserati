@@ -16,5 +16,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "un": "0.0.0",
+    "vue": "^2.6.10"
   }
 }

@@ -45,4 +45,29 @@ module.exports = [
         filename: "static/pages/service_detail.html",
         chunks: ["service_detail"]
     }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/register.html",
+        filename: "static/pages/register.html",
+        chunks: ["register"]
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/enroll.html",
+        filename: "static/pages/enroll.html",
+        chunks: ["enroll"]
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/brand.html",
+        filename: "static/pages/brand.html",
+        chunks: ["brand"]
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/testdrive.html",
+        filename: "static/pages/testdrive.html",
+        chunks: ["testdrive"]
+    }),
+    new HtmlWebpackPlugin({
+        template: "./src/pages/grzx.html",
+        filename: "static/pages/grzx.html",
+        chunks: ["grzx"]
+    }),
 ]
