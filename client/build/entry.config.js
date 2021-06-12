@@ -1,6 +1,15 @@
 module.exports = {
-    "main":"./src/js/index.js",
-    "detail":"./src/js/detail.js",
-    "loginRegister":"./src/js/login-register.js",
-    "shoppingCart": "./src/js/shopping-cart.js"
+    "main"   : "./src/js/index.js",
+    "safety" : "./src/js/safety.js",
+    "fleet"  : "./src/js/fleet-maintenance-program.js",
+    "ghibli" : "./src/js/ghibli_car.js",
+    "service": "./src/js/service.js",
+    "news"   : "./src/js/news.js",
+    "enroll" : "./src/js/enroll.js",
+    "brand"  : "./src/js/brand.js",
+    "testdrive"     : "./src/js/testdrive.js",
+    "service_detail": "./src/js/service_detail.js",
+    "news_detail"   : "./src/js/news_detail.js",
+    "register"      : "./src/js/register.js",
+    "grzx"   : "./src/js/grzx.js",
 }

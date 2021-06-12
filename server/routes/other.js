@@ -23,8 +23,8 @@ router.get("/images", (req, res) => {
         // 横幅图标
         case "banner": {
             let icons = [], promos = [];
-            let texts = ["小米秒杀", "企业团购", "F码通道", "米粉卡", "以旧换新", "话费充值"];
-
+            // let texts = ["小米秒杀", "企业团购", "F码通道", "米粉卡", "以旧换新", "话费充值"];
+            
             for (let i = 1; i < 7; i++) {
                 icons.push({
                     imgName: `icon_${i}.png`,
